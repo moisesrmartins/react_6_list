@@ -7,6 +7,7 @@ axios
     console.log(res.data);
   });
 
+/*
 axios
   .post("https://myproject-be4c4-default-rtdb.firebaseio.com/lista.json", {
     outer: "Adeus",
@@ -14,6 +15,7 @@ axios
   .then((res) => {
     console.log(res.data);
   });
+*/
 
 function Lista() {
   return (
