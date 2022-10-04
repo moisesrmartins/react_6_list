@@ -5,19 +5,16 @@ const url =
   "https://myproject-be4c4-default-rtdb.firebaseio.com/lista-dois.json";
 
 function Lista2() {
-  const [loading, setLoading] = useState(false);
-  const [data, setData] = useState({});
+  const [data, setData] = useState({ loading: true, data: {} });
 
   useEffect(() => {
-    setLoading(true);
     axios.get(url).then((res) => {
-      setData(res.data);
-      console.log(res.data);
-      setLoading(false);
+      setData({ loading: false, data: res.data });
+      console.log({ loading: false, data: res.data });
     });
   }, []);
 
-  if (loading) {
+  if (data.loading) {
     return <p>Loading...</p>;
   }
 
