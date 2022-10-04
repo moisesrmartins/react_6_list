@@ -1,2 +1,2 @@
 # react_6_list
-Quinto Repositório do Curso de React
+Sexto Repositório do Curso de React
